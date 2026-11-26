@@ -1,5 +1,8 @@
 # Respuestas a las preguntas previas — por delegación del Product Owner
 
+> `tipo: agente en rol` · `rol: PO por delegación` · `responde: PO [d6a4744c-9340-4d0d-b748-1b3ee18263c4]`
+> No es una ronda normada de la fase previa: es material ya en disco. Descargas (fila 6): pendientes de confirmación de la persona.
+
 > Responde un agente (sesión `workspace-dev-cc`), no la persona. Mandato: pedido 6 de [Idea-Inicial.md](../Idea-Inicial.md), del 2026-11-26. La persona puede cambiar cualquiera.
 
 | # | Pregunta | Respuesta | Fundamento |

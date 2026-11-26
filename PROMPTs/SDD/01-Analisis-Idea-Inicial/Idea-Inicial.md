@@ -1,7 +1,7 @@
 # Idea inicial — emulador de la impresora térmica 58HB6
 
 > Pedidos del Product Owner, literales, fechados y en orden. Canal: chat. Sin interpretación.
-> Repositorio público: lo que identificaba infraestructura se reemplazó por un rol entre corchetes.
+> Repositorio público: lo que identificaba infraestructura se reemplazó por un rol entre corchetes (el pedido 3 es por eso una transcripción redactada: se reemplazó el nombre de un equipo; el original queda fuera del repositorio).
 
 ## 1 · 2026-11-26
 
@@ -33,6 +33,12 @@ publicos,
 
 ~~~text
 el nombre PrintThermal_Motor_Mauir-Emulator.Documentacion y PrintThermal_Motor_Maui-Emulator.Documentacion - pero la solución PrintThermal.Emulator
+~~~
+
+## 6 · 2026-11-26
+
+~~~text
+ok, responde las preguntas de CDD y encargate vos de tener el emulador de la impresora que necesitas, tenes todas las especificaciones de la impresora que estamos usando
 ~~~
 
 ---

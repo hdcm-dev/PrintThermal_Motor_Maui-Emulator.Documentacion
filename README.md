@@ -1,5 +1,5 @@
-# PrintThemal-Emulator.Documentacion
+# PrintThermal_Motor_Maui-Emulator.Documentacion
 
-Repositorio complementario de [PrintThemal-Emulator](https://github.com/hdcm-dev/PrintThemal-Emulator): prompting, guías e indexación.
+Repositorio complementario de [PrintThermal_Motor_Maui-Emulator](https://github.com/hdcm-dev/PrintThermal_Motor_Maui-Emulator): prompting, guías e indexación.
 
 - `PROMPTs/`: prompts del proyecto, cada uno con sus entradas y salidas.

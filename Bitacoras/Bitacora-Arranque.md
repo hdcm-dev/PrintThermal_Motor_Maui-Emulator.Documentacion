@@ -51,3 +51,37 @@
   - `ancla`, que avisa que ningún workflow invoca `cdd.py` (DEC-006) y que eso falla desde 0.16.0;
   - `recorrido`, `lazo` y `deuda`.
 - PR #4 (https://github.com/hdcm-dev/PrintThermal_Motor_Maui-Emulator/pull/4), cabeza `5df2082`: `clean`, y la corrida `cdd` del pull request (46027779404) en éxito. Sin fusionar: la fusión la hace otra etapa, en orden.
+
+## 2026-11-27 · PAR-PTE-03: Bluetooth Classic propio en C# contra netsim (sesión CDD, subagente de un flujo)
+
+- Fuente de la norma (`IA.CDD`, `b609a2a`): `git status --short` vacío al empezar y al terminar. Compuertas con la copia `fw-b609a2a`, `python3 -I`.
+- Re-planificación en `main` (`2dfe61c`):
+  - base `9dec7ce`;
+  - lee REQ-HIS-Compilacion-Verificada@v2;
+  - ADR-0004 sale de `modifica`, porque tiene gobierno humano.
+- Código en `src/PrintThermal.Emulator.Bluetooth/`: HCI por el gRPC de netsim (HTTP/2 sin TLS y protobuf a mano, sin paquetes), L2CAP, SDP, SSP y RFCOMM con créditos. Reemplaza a Bumble.
+- Pruebas en `mcr.microsoft.com/dotnet/sdk:10.0.403`, con turno en el equipo de cómputo (2 CPU / 4 GB):
+  - rojo: 13 de 17, turno 226;
+  - verde: 22 de 22, turno 264;
+  - mutación: once en rojo, turnos 248, 250, 257 y 263.
+- Prueba real: emulador Android 17, API 37, con turno 242 (2 vCPU / 6 GB) en el equipo del emulador, y la app Java mínima.
+  - Descubre 3 de 3.
+  - Empareja por SSP.
+  - SHA-256 igual 10 de 10.
+  - Reconecta 2 de 2 sin reemparejar.
+  - Desvío medido: netsim escucha sólo en loopback. El periférico corrió dentro del contenedor del emulador (LAZ-0005).
+  - Al terminar: contenedor eliminado y turno cerrado.
+- Mesa de D1 (K2, TS-2 y TS-3) con `claude -p`, mismo modelo y otro contexto, en `PROMPTs/SDD/02-Mesa-TS2-TS3/`: tres comisiones, refutador y jurado de cinco.
+  - Resultado: TS-3 = A y TS-2 = A, 5 de 5.
+  - El texto propuesto para ADR-0004 va al lote de la Review.
+- Auditor refutador (`claude -p`, mismo modelo, otro contexto):
+  - rondas 1 y 2: «refutado», respondidas con correcciones o con LAZ;
+  - ronda 3: «no refutado», y sus menores se aplicaron.
+- LAZ abiertos: 0005, 0010, 0011 y 0012. Se saltaron de 0006 a 0009, que tomó PAR-PTE-04 en paralelo.
+- Compuertas sobre la cabeza `a23ae7f`, todas en 0:
+  - `ready --contra origin/main`: PASA;
+  - `cierre --parcela` y `cierre --pr`: PASA;
+  - `documental --exigir-indice`: PASA;
+  - `ancla`: PASA, con el aviso de que ningún workflow invoca `cdd.py` (consecuencia de 5B, falla en 0.16.0);
+  - `lazo` y `deuda`: PASA.
+- PR #3 abierto y sin fusionar: la fusión va en orden en otra etapa.

@@ -85,3 +85,13 @@
   - `ancla`: PASA, con el aviso de que ningún workflow invoca `cdd.py` (consecuencia de 5B, falla en 0.16.0);
   - `lazo` y `deuda`: PASA.
 - PR #3 abierto y sin fusionar: la fusión va en orden en otra etapa.
+
+## 2026-11-27 · PAR-PTE-02: intérprete ESC/POS a PNG y almacén de tickets (sesión CDD, subagente de un flujo)
+
+- Fuente de la norma (`IA.CDD`, `b609a2a`): `git status --short` vacío al empezar y al terminar. Compuertas con la copia `fw-b609a2a`, `python3 -I`.
+- Re-planificación en `main` (`af03a45`): base `9dec7ce` y REQ-HIS-Compilacion-Verificada@v2 en `lee`, por el «I-3 anticipado» de `ready --contra main` (`cierre` lee `lee` de la parcela en la base).
+- Vectores dorados: los `.bin` salen de ejecutar los renderers de la librería cliente (`origin/main` `940fa7f`) en `mcr.microsoft.com/dotnet/sdk:10.0.403` con turno; tres corridas del generador dieron bytes idénticos. Matrices QR de referencia de QRCoder 1.8.0 en modo byte (la sobrecarga de texto elige otro modo).
+- Pruebas con turno en el equipo de cómputo (2 CPU / 4 GB): rojo 30 de 30 (turno 224); verde final 61 de 61 y 29 mutantes en rojo (turno 266).
+- Auditor refutador en otro contexto (`claude -p`, mismo modelo, garantía reducida): tres rondas, «refutado» en las tres; lo señalado se atendió o quedó en LAZ-0001 (fin de ticket sin corte), LAZ-0002 (protocolo sin medir) y LAZ-0003 (licencia de la fuente en la imagen). No se corrió una cuarta ronda.
+- Compuertas en la rama (base `main` `9e5e1d6`): `ready --contra main`, `cierre --parcela`, `cierre --pr`, `documental --exigir-indice`, `ancla --fw <copia>`, `lazo` y `deuda`: PASA (0). `ancla` sigue avisando que ningún workflow invoca `cdd.py` (DEC-006).
+- PR #2 (https://github.com/hdcm-dev/PrintThermal_Motor_Maui-Emulator/pull/2), cabeza `ad7b415`: CI `cdd` (pull_request, 46031875233) en éxito; `mergeable` y `clean`. No se fusionó: la fusión va en orden en otra etapa.

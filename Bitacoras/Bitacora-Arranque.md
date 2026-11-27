@@ -119,3 +119,15 @@
   - la fidelidad contra la 58HB6 física.
 - El navegador del servidor MCP del agente no llegó a la red de contenedores. El visor se capturó con Chrome del emulador de Android.
 
+
+## 2026-11-27 · PAR-PTE-06: documentación de uso como código (sesión CDD, subagente de un flujo)
+
+- Re-planificación por PR propio: PR #6, merge `dd71ee5` (base `7192bce`, `lee` vigentes, REQ-02, D1-D2).
+- PAR-PTE-06: PR #7, merge `3b3f3bb`, por conformación automática con la guarda G1-G4 releída antes del merge.
+  - `docs/` con índice por tarea, qué es y límites, montaje, emparejar e imprimir, API (curl y cliente tipado), visor y Scalar, diagnóstico, recetas y la ficha de diseño documental (`DocsAsCode-Designing-Specification` 1.5, aplicado condensado). `README.md` la enlaza.
+  - La prueba `DocumentacionTests` corre los ejemplos de bash contra el host real con la fuente simulada y contrasta rutas, campos, claves, valores por omisión, imagen, puerto, mensajes de registro, anclas y páginas con el código.
+  - Pruebas: rojo 2 de 133 (sin `docs/`), verde 133 de 133 y mutantes 17 de 17. Todo con turno en el equipo de cómputo, perfil liviano.
+  - Auditor refutador (mismo modelo, otro contexto): dos rondas, las dos refutaron, con respuesta a cada hallazgo.
+  - Compuertas sobre la cabeza `54bf4d5` contra `main`: `ready`, `cierre --parcela`, `cierre --pr`, `documental`, `ancla`, `lazo` y `deuda` en PASA.
+- Abiertos: LAZ-0013 (pasos de `docs/` sin medir con la imagen publicada) y LAZ-0014 (imagen privada: la visibilidad la decide la persona).
+- SPR-01 queda con todas sus parcelas cerradas; la Review (K3) es de la persona.

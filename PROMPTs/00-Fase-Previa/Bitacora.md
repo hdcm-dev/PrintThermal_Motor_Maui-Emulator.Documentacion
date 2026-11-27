@@ -31,3 +31,11 @@ Corridas sobre la copia con sólo lo versionado, salvo donde se indica.
 | `esqueleto <principal> --com .` | inerte sin `cdd/cdd.lock.md`; PASA esqueleto (no midió) | 0 |
 | `documental PROMPTs README.md` sobre una copia con sólo lo versionado | PASA documental | 0 |
 | `documental PROMPTs README.md` sobre la copia de trabajo | FALLA (1): IPv4 en un análisis local, sin publicar | 1 |
+
+## 2026-11-27 · ronda 02 respondida e intake 1.2
+
+- Respuesta de la persona a la ronda 02 (chat, bloques C1 a C4) transcripta por un agente en `01-Relevamiento/OUTPUTs/02-respuestas.md` (F9), copiada byte a byte de `PrintThermal_Motor_Maui-Emulator.Media/testimonios-2026-11-27.md`, sha256 por bloque con la receta de la plantilla. P1 sí, P2 A, P3 C (no la recomendada), P4 A, P5 A.
+- La aprobación de P1 no firma la 1.1: la persona la dio sabiendo que P3 cambiaba el texto. La norma pregunta sobre un texto cerrado y no firma «sí, con mis respuestas incorporadas»: la versión siguiente vuelve a la persona (`IA.CDD/CDD/Templates/fase-previa/preguntas.md:30-31`, `CDD/Orchestrator/00-Fase-Previa.md` §3 paso 3 línea 59, `tool-prompt-03-Normalizado.md:27`). No hay en la norma firma de una versión con la decisión posterior registrada aparte.
+- Intake 1.2 (cerrado, todas las TS-n se conservan; TS-5, TS-6, TS-7 y PA-5 respondidas) y ronda 03 (K3, una pregunta) en `OUTPUTs/03-preguntas.md`. Sin firma: pendiente de la persona, sin plazo ni default.
+- Planteo 1.1 e integrador 1.1 quedan como historial de lo propuesto antes de la ronda 02 (runner propio en etiqueta); el intake 1.2 manda.
+- Quedan sin responder tres preguntas de la persona (dónde queda publicada la imagen, token de Docker Hub, costo); no cambian el texto.

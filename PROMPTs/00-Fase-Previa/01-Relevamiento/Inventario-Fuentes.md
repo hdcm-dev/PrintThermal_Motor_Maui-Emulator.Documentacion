@@ -18,6 +18,7 @@ Fuente: documento con ruta, citado `F<n>`. Hueco: `HU-<n>`.
 | F5 | `OUTPUTs/mandato-respuestas-2026-11-26.md` | pedido (transcripción) | alcance de la delegación | completo | — |
 | F7 | `OUTPUTs/01-respuestas.md` | respuestas de la persona (transcripción, ronda 01) | campo cercano, versión de Android, medición | completo | — |
 | F8 | `OUTPUTs/mandato-requisitos-2026-11-27.md` | pedido (transcripción) | requisitos A1 a A6 (copia del pedido 7 de F1) | completo | — |
+| F9 | `OUTPUTs/02-respuestas.md` | respuestas de la persona (transcripción, ronda 02) | release, runner, autenticación de la API, mantenimiento; aprobación de la 1.1 | completo | — |
 
 ## 3. Huecos
 

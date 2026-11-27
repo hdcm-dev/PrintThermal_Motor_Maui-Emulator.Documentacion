@@ -39,3 +39,9 @@ Corridas sobre la copia con sólo lo versionado, salvo donde se indica.
 - Intake 1.2 (cerrado, todas las TS-n se conservan; TS-5, TS-6, TS-7 y PA-5 respondidas) y ronda 03 (K3, una pregunta) en `OUTPUTs/03-preguntas.md`. Sin firma: pendiente de la persona, sin plazo ni default.
 - Planteo 1.1 e integrador 1.1 quedan como historial de lo propuesto antes de la ronda 02 (runner propio en etiqueta); el intake 1.2 manda.
 - Quedan sin responder tres preguntas de la persona (dónde queda publicada la imagen, token de Docker Hub, costo); no cambian el texto.
+
+## 2026-11-27 · ronda 03 respondida e intake 1.2 firmado
+
+- Respuesta de la persona a la ronda 03 (chat, bloque D1) transcripta por un agente en `01-Relevamiento/OUTPUTs/03-respuestas.md` (F10), copiada byte a byte de `PrintThermal_Motor_Maui-Emulator.Media/testimonios-2026-11-27.md`; sha256 del bloque `4180d983…c9d4` con la receta de la plantilla (la receta reproduce la huella de C1 de la ronda 02).
+- «Claro» frente a «¿Aprobás el documento de requisitos versión 1.2? … Con tu «sí» lo firmo con esa huella» se leyó como sí explícito: es un sí a una pregunta cerrada sobre una versión y huella nombradas, sin «con mis respuestas incorporadas» ni cambios pedidos (`00-Fase-Previa.md` §3 paso 3, `Templates/fase-previa/preguntas.md:30-31`); la norma no fija palabras, fija que el texto aprobado esté cerrado y nombrado. Firmado `intake.md` 1.2; el texto fuera de §14 y de la fila «estado» no cambió (la huella excluye ambas).
+- Pedido 8 (documentación como código para que los agentes consulten el uso del emulador; conocimientos de DocsAsCode existentes, sin integración con IA Layer) en `Idea-Inicial.md` §8, como insumo para el Arranque. No reabre el intake firmado: es posterior a la firma y se trata en el Arranque (siembra), donde decidirá si entra y cómo. Conocimiento existente: `IA.Knowledge.Base/Knowledges/Knowledge-DocsAsCode-Designing-Specification.md`.

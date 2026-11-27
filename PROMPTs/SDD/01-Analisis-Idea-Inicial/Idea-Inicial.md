@@ -87,6 +87,14 @@ y sumale scalar , antes era swagger a esa api
 podes si queres que el visor llame a la api, es un punto de testeo y como ejemplo para hacer mas elevado el dia de mañana
 ~~~
 
+## 8 · 2026-11-27
+
+Respuesta de la persona a la ronda 03 (bloque D1 de la transcripción `00-Fase-Previa/01-Relevamiento/OUTPUTs/03-respuestas.md`). Su «Claro» responde a la firma del intake 1.2; el resto es un pedido nuevo, el pedido 8. Literal, sin corregir.
+
+~~~text
+Claro. Vos podes publicar el contenedor listo para usar. Si querés incluirle un      docascode para que los agentes consulten su uso. Tenemos conocimientos de docasdoc pero sin integración con ia layer
+~~~
+
 ---
 
 Encargo: hacer la fase previa de CDD sobre esta idea.

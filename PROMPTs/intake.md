@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | versión | 1.2 |
-| estado | borrador |
+| estado | aprobado |
 | fecha | 2026-11-27 |
 | framework de destino | IA.CDD 0.15.8 (`b609a2a`) |
 
@@ -109,7 +109,7 @@ PA-6 quedó respondida: producto en .NET 10 (I:21).
 
 ## 14. Aprobación
 
-Pendiente de la persona: firma K3 sobre la versión 1.2, en la ronda 03, sin plazo ni default. El mandato de delegación no la cubre. La aprobación de la ronda 02 (P1) era sobre la 1.1 y no la firma: las decisiones de P2 a P5 cambian el texto (`00-Fase-Previa.md` §3 paso 3).
+`aprobado: Fernando 2026-11-27 versión: 1.2 sha256: 86b40e98947511c1d7c4c260f7b944b104e3f85748ddcd46e52ef2e0ca80e442 testimonio: PROMPTs/00-Fase-Previa/01-Relevamiento/OUTPUTs/03-respuestas.md`
 
 ## 15. Control de cambios
 

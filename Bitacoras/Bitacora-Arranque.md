@@ -22,3 +22,32 @@
 - Compuertas de PAR-PTE-01 en la rama (base `main`): `cierre --parcela` PASA (0); `cierre --pr` PASA (0); `deuda` PASA (0); `documental --exigir-indice cdd/corpus <parcela>` PASA (0, 29 archivos); `ancla --fw <copia>` PASA (0) con dos avisos: «cdd_commit b609a2a no resuelve en ningún repo de la fuente» y «ningún workflow invoca `cdd.py lazo` ni `cdd.py ancla` … (pasa a falla en 0.16.0)». Este último es consecuencia de P5 B y habrá que resolverlo al migrar a 0.16.0.
 - PR #1 (https://github.com/hdcm-dev/PrintThermal_Motor_Maui-Emulator/pull/1), cabeza `8e5e1ad`: guarda con techo 1800 s e intervalo 30 s (`ENTREGA.md`); relectura final: abierto, misma cabeza, `mergeable` y `clean`, una corrida (`cdd`, pull_request, 46016179912) en éxito. **Fusionado por el agente** con commit de merge atado a la cabeza: `9dec7ce`. Rama remota borrada y comprobada (404); `main` local al día, `8e5e1ad` alcanzable, rama local borrada.
 - Controles del commit de merge `9dec7ce` en `main`: una corrida (`cdd`, push, 46016325233) en éxito. Sigue: PAR-PTE-02 (ola 2; su `ready` pedirá actualizar la huella de REQ-HIS-Compilacion-Verificada a v2).
+
+## 2026-11-27 · PAR-PTE-04: API, visor Blazor, Scalar y cliente tipado (sesión CDD, subagente de un flujo)
+
+- Fuente de la norma (`IA.CDD`, `b609a2a`): `git status --short` vacío al empezar y al terminar. Compuertas con la copia `fw-b609a2a`, `python3 -I`.
+- Re-planificación en `main` (`9e5e1d6`), como las de PAR-PTE-02 y PAR-PTE-03:
+  - base `9dec7ce`;
+  - REQ-HIS-Cliente-Tipado@v2;
+  - REQ-HIS-Compilacion-Verificada@v2 en `modifica`, por `Directory.Packages.props`;
+  - REQ-05 (cliente) y REQ-06 (escucha local);
+  - velocidad completa, con `plan.md` y `tasks.md`.
+
+  `ready --contra origin/main`: PASA (0).
+- La ola 3 corrió con la ola 2 abierta, contra un almacén en memoria y una fuente simulada (D4), y el orden de fusión quedó en LAZ-0009. Los LAZ se numeraron 0006 a 0009 porque PAR-PTE-02 toma 0001 y 0002, y PAR-PTE-03 toma 0005.
+- K2 D2 (ADR-0003, opción A) y D3 (contrato de la API): mesa ciega con `claude -p`, mismo modelo y otro contexto. Aceptó D3 con cinco cambios, todos aplicados. Las dos van al lote de la Review.
+- Pruebas en `mcr.microsoft.com/dotnet/sdk:10.0.403` con turno en el equipo de cómputo (2 CPU / 4 GB):
+  - rojo: 29 de 37;
+  - verde final: 39 de 39;
+  - mutación: 6 de 6 en rojo;
+  - escucha: el host publicado escucha sólo en `127.0.0.1:5080`.
+- Recorrido en navegador real: Chrome del contenedor de juicio, por el puente de Docker y un túnel. Va a 1440 y 360 px, con los cuatro estados, y la consola sin errores. Dos corridas descartadas:
+  - un 404 de favicon;
+  - una vuelta a «cargando» tras un error de prerenderizado.
+- Auditor refutador (`claude -p`, mismo modelo, otro contexto): ronda 1 «refutado», ronda 2 «refutado». Las dos se respondieron con correcciones o con LAZ. La respuesta a la ronda 2 no se volvió a auditar.
+- Compuertas de PAR-PTE-04 sobre la cabeza `5df2082`, con base `origin/main`. PASA (0) en todas:
+  - `cierre --parcela` y `cierre --pr`;
+  - `documental --exigir-indice`;
+  - `ancla`, que avisa que ningún workflow invoca `cdd.py` (DEC-006) y que eso falla desde 0.16.0;
+  - `recorrido`, `lazo` y `deuda`.
+- PR #4 (https://github.com/hdcm-dev/PrintThermal_Motor_Maui-Emulator/pull/4), cabeza `5df2082`: `clean`, y la corrida `cdd` del pull request (46027779404) en éxito. Sin fusionar: la fusión la hace otra etapa, en orden.

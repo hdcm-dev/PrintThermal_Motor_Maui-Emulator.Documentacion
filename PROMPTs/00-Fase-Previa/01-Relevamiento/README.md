@@ -1,6 +1,6 @@
 # Tool-prompt 01 · Relevamiento y planteo de la idea inicial
 
-Invocación: «Leer y ejecutar» este archivo. Pasos según la plantilla `CDD/Templates/fase-previa/tool-prompt-01-Relevamiento.md` de IA.CDD 0.15.8, orquestados por `CDD/Orchestrator/00-Fase-Previa.md` §3.1.
+Invocación: «Leer y ejecutar» este archivo. Pasos según la plantilla `CDD/Templates/fase-previa/tool-prompt-01-Relevamiento.md` de la norma CDD 0.15.8, orquestados por `CDD/Orchestrator/00-Fase-Previa.md` §3.1.
 
 ## Objetivo
 

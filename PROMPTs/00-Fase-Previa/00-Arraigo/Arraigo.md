@@ -1,6 +1,6 @@
 # Arraigo · emulador de la impresora térmica 58HB6
 
-> Paso 0 de la fase previa (IA.CDD 0.15.8).
+> Paso 0 de la fase previa (norma CDD 0.15.8).
 
 | Campo | Valor |
 |---|---|

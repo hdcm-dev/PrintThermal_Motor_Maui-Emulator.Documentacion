@@ -1,6 +1,6 @@
 # Tool-prompt 02 · Documento integrador
 
-Invocación: «Leer y ejecutar» este archivo. Pasos según `CDD/Templates/fase-previa/tool-prompt-02-Integrador.md` de IA.CDD 0.15.8.
+Invocación: «Leer y ejecutar» este archivo. Pasos según `CDD/Templates/fase-previa/tool-prompt-02-Integrador.md` de la norma CDD 0.15.8.
 
 ## Objetivo
 

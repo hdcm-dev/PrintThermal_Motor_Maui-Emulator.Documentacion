@@ -1,6 +1,6 @@
 # Tool-prompt 03 · Documento normalizado
 
-Invocación: «Leer y ejecutar» este archivo. Pasos según `CDD/Templates/fase-previa/tool-prompt-03-Normalizado.md` de IA.CDD 0.15.8.
+Invocación: «Leer y ejecutar» este archivo. Pasos según `CDD/Templates/fase-previa/tool-prompt-03-Normalizado.md` de la norma CDD 0.15.8.
 
 ## Objetivo
 

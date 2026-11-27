@@ -41,6 +41,52 @@ el nombre PrintThermal_Motor_Mauir-Emulator.Documentacion y PrintThermal_Motor_M
 ok, responde las preguntas de CDD y encargate vos de tener el emulador de la impresora que necesitas, tenes todas las especificaciones de la impresora que estamos usando
 ~~~
 
+## 7 · 2026-11-27
+
+Seis mensajes seguidos del Product Owner, por chat, en orden (A1 a A6). Literales, sin corregir.
+
+**A1**
+
+~~~text
+ok, en ios no podemos emular el bluetooth en ios - no se si el problema es xcode  o que , pero bueno, 
+
+para que lo planifiques, cuando termines el mulador, el montaje del emulador lo podes plasmar en un conocimiento , revisa `/Ng/Ng-IA/Ng.IA-Context.Scene/Knowledges/Index-Knowledge.md` y ve la mejor forma de crear un conocimiento ahí que permita ser llamados por los otros para montar el emulador de forma limpia. 
+
+podes generar un release del proyecto emulador en github, acodate de usar nuestro runner y usarlo el binario para montar el contenedor o la otra forma es que cuando se necesite el emulador se contruya el contenedor y la aplicación al vuelo, fijate el mejor modo
+~~~
+
+**A2**
+
+~~~text
+si respecta esas normas, si necesitas mejorarlas me decis,
+
+¿y pensaste como se va a poder acceder a la imagen que genere? , le vas a generar algo server html o un endpoint para pillar la imagen,
+~~~
+
+**A3**
+
+~~~text
+podes agregarle un visor web en blazor interactive server para ver los tickets, sencillo solo un visor sin usuarios,
+~~~
+
+**A4**
+
+~~~text
+el visor blazor integrado al servicio de la api
+~~~
+
+**A5**
+
+~~~text
+y sumale scalar , antes era swagger a esa api
+~~~
+
+**A6**
+
+~~~text
+podes si queres que el visor llame a la api, es un punto de testeo y como ejemplo para hacer mas elevado el dia de mañana
+~~~
+
 ---
 
 Encargo: hacer la fase previa de CDD sobre esta idea.

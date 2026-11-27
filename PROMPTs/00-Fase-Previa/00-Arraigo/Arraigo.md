@@ -23,7 +23,7 @@ El espacio no declara carpeta compartida en `AGENTS.md` ni en un lock (no existe
 |---|---|---|---|
 | Repositorio de la solución | `main` al día; sólo `.gitignore` y `README.md` | 2026-11-27 | `git fetch`, `git status -sb`, `git ls-files` |
 | Complementario | `main` al día; prompts, idea inicial y respuestas | 2026-11-27 | ídem |
-| Idea inicial | seis pedidos fechados | 2026-11-26 | `PROMPTs/SDD/01-Analisis-Idea-Inicial/Idea-Inicial.md` |
+| Idea inicial | siete pedidos fechados (el 7, del 2026-11-27, con A1 a A6) | 2026-11-27 | `PROMPTs/SDD/01-Analisis-Idea-Inicial/Idea-Inicial.md` |
 | Respuestas por delegación | siete filas; agente en rol, no es ronda normada | 2026-11-26 | `PROMPTs/SDD/01-Analisis-Idea-Inicial/OUTPUTs/Respuestas-A-Preguntas.md` |
 | Análisis previos (especificación, medios y factibilidad, borrador) | en disco, locales y sin publicar | 2026-11-27 | `.git/info/exclude` |
 | Código del emulador y prueba de punta a punta | no existe; nada se ejecutó según los análisis | 2026-11-27 | `git ls-files`; análisis locales |
@@ -33,13 +33,22 @@ El espacio no declara carpeta compartida en `AGENTS.md` ni en un lock (no existe
 | # | Cita literal (`ruta:línea`) | Clase | Buscado en (lugares y qué dio) | Estrategia |
 |---|---|---|---|---|
 | 1 | «es posible con el emulador incluir esa funcionalidad de red bluetooth» (`PROMPTs/SDD/01-Analisis-Idea-Inicial/Idea-Inicial.md:9`) | EJECUTAR | análisis de factibilidad local: factible según código leído, no verificado | prueba corta S0-S8 |
-| 2 | «debian tener emulado lo del campo cercano con la versión de android» (`PROMPTs/SDD/01-Analisis-Idea-Inicial/Idea-Inicial.md:15`) | CONSULTAR | idea, respuestas y análisis: sólo interpretaciones de agentes | consulta con propuesta |
+| 2 | «debian tener emulado lo del campo cercano con la versión de android» (`PROMPTs/SDD/01-Analisis-Idea-Inicial/Idea-Inicial.md:15`) | CONSULTAR | idea, respuestas y análisis: sólo interpretaciones de agentes | consulta con propuesta; respondida en la ronda 01 (`01-Relevamiento/OUTPUTs/01-respuestas.md`): sólo «Dispositivos cercanos» |
 | 3 | «hacelo al emulador en .net 10» (`PROMPTs/SDD/01-Analisis-Idea-Inicial/Idea-Inicial.md:21`) | EJECUTAR | respuestas, fila 6 | producto en .NET 10; Bumble sólo en la prueba corta |
 | 4 | «creo que puede ir bien en contenedor» (`PROMPTs/SDD/01-Analisis-Idea-Inicial/Idea-Inicial.md:21`) | EJECUTAR | respuestas, fila 4 | contenedor aparte en la red del emulador |
 | 5 | «la salida puede simplemente una imagen bitmap como si fuera la foto del ticket» (`PROMPTs/SDD/01-Analisis-Idea-Inicial/Idea-Inicial.md:21`) | EJECUTAR | respuestas, fila 3 | PNG |
 | 6 | «publicos» (`PROMPTs/SDD/01-Analisis-Idea-Inicial/Idea-Inicial.md:27`) | EJECUTAR | repositorio de código responde sin credencial | redactar todo lo versionado para público |
 | 7 | «pero la solución PrintThermal.Emulator» (`PROMPTs/SDD/01-Analisis-Idea-Inicial/Idea-Inicial.md:35`) | EJECUTAR | respuestas, fila 1 | nombres vigentes |
 | 8 | «responde las preguntas de CDD y encargate vos» (`PROMPTs/SDD/01-Analisis-Idea-Inicial/Idea-Inicial.md:41`) | EJECUTAR | mandato transcripto en `01-Relevamiento/OUTPUTs/` | citar las respuestas; la firma no está cubierta |
+| 9 | «en ios no podemos emular el bluetooth en ios» (`PROMPTs/SDD/01-Analisis-Idea-Inicial/Idea-Inicial.md:51`) | EJECUTAR | pedido 7, A1; análisis locales no cubren iOS | iOS fuera de alcance |
+| 10 | «lo podes plasmar en un conocimiento» (`PROMPTs/SDD/01-Analisis-Idea-Inicial/Idea-Inicial.md:53`) | EJECUTAR | índice de conocimientos de `Ng.IA-Context.Scene`: hay conocimientos `Knowledge-SCENE-*`, ninguno monta este emulador | conocimiento de montaje tras el emulador |
+| 11 | «podes generar un release del proyecto emulador en github» (`PROMPTs/SDD/01-Analisis-Idea-Inicial/Idea-Inicial.md:55`) | EJECUTAR | pedido 7, A1; repositorio de código sin release | release; modo a criterio del agente, a aprobar en la ronda 02 |
+| 12 | «acodate de usar nuestro runner» (`PROMPTs/SDD/01-Analisis-Idea-Inicial/Idea-Inicial.md:55`) | CONSULTAR | repositorio público: la regla del runner propio en repositorios públicos choca con la frase | consulta con propuesta: runner propio sólo en etiqueta o disparo manual; rige la frase hasta la respuesta |
+| 13 | «un endpoint para pillar la imagen» (`PROMPTs/SDD/01-Analisis-Idea-Inicial/Idea-Inicial.md:63`) | EJECUTAR | pedido 7, A2 | API HTTP de tickets |
+| 14 | «un visor web en blazor interactive server para ver los tickets, sencillo solo un visor sin usuarios» (`PROMPTs/SDD/01-Analisis-Idea-Inicial/Idea-Inicial.md:69`) | EJECUTAR | pedido 7, A3 | visor sin usuarios |
+| 15 | «el visor blazor integrado al servicio de la api» (`PROMPTs/SDD/01-Analisis-Idea-Inicial/Idea-Inicial.md:75`) | EJECUTAR | pedido 7, A4 | un solo servicio |
+| 16 | «sumale scalar , antes era swagger a esa api» (`PROMPTs/SDD/01-Analisis-Idea-Inicial/Idea-Inicial.md:81`) | EJECUTAR | pedido 7, A5 | OpenAPI con Scalar |
+| 17 | «que el visor llame a la api» (`PROMPTs/SDD/01-Analisis-Idea-Inicial/Idea-Inicial.md:87`) | EJECUTAR | pedido 7, A6 | el visor consume la API por HTTP |
 
 ## 4. Barrido de estímulos
 
@@ -79,6 +88,7 @@ Medido el 2026-11-27: `git status -sb` en los dos repositorios da `main...origin
 
 - Filas `NO BUSCADO`: 0.
 - Estímulos: 2 aplicados · 0 PEDIDO · 0 mesa · 1 parado con motivo y condición de salida.
-- Consulta al dueño (fila 2): ¿«lo del campo cercano» es el permiso «Dispositivos cercanos» de Android sobre Bluetooth, o NFC? Propuesta: «Dispositivos cercanos» sobre Bluetooth; sin plazo ni default.
+- Consulta al dueño (fila 2): ¿«lo del campo cercano» es «Dispositivos cercanos» o NFC? Respondida en la ronda 01.
+- Consulta al dueño (fila 12): el runner propio en un repositorio público. Va a la ronda 02, con propuesta; sin plazo ni default.
 - Avisos al dueño (informativos): ninguno.
 - Pedidos: ninguno.

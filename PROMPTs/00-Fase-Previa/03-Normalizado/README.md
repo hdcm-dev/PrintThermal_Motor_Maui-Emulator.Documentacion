@@ -22,4 +22,4 @@ Completar §1 a §13, presentar la K3 sobre la versión y su huella, firmar sól
 
 ## Cómo se ejecutó esta vez
 
-Normalizado 1.0 en borrador. Firma pendiente de la persona; nadie firmó en su nombre. Preguntas abiertas en §11.
+Normalizado 1.1, texto cerrado en borrador. La ronda 02 (K3) está emitida en `01-Relevamiento/OUTPUTs/02-preguntas.md` y sin respuesta: firma pendiente de la persona; nadie firmó en su nombre. Preguntas abiertas en §11.

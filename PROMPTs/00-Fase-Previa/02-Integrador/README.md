@@ -22,4 +22,4 @@ Toda fuente en la matriz; toda tensión con dueño; las de mesa con dictamen o �
 
 ## Cómo se ejecutó esta vez
 
-Fuentes F1 a F6. Tensiones TS-1 a TS-4. Sin mesas convocadas (sin subagentes por presupuesto): TS-2 y TS-3 diferidas a la siembra. Ninguna ronda de decisión.
+Fuentes F1 a F8. Tensiones TS-1 a TS-7: TS-1 y TS-4 respondidas en la ronda 01; TS-5 a TS-7 van a la ronda 02. Sin mesas convocadas (sin subagentes por presupuesto): TS-2 y TS-3 diferidas a la siembra. Integrador 1.1.

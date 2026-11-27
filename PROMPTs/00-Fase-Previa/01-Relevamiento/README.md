@@ -22,4 +22,4 @@ Siete secciones, citas, toda pregunta con dueño, dos páginas.
 
 ## Cómo se ejecutó esta vez
 
-Fuentes F1 a F6, las de disco; F3 y F4 por extractos, trasladados redactados a F6. Sin ronda nueva de relevamiento: se citó lo existente. Quedaron abiertas PA-1 a PA-5.
+Fuentes F1 a F8. F3 y F4 por extractos, trasladados redactados a F6. Ronda 01 (PA-1 a PA-3), respondida por la persona por chat y transcripta en `OUTPUTs/01-respuestas.md` (F7). Pedido 7 (requisitos A1 a A6) en la idea y en `OUTPUTs/mandato-requisitos-2026-11-27.md` (F8). Planteo 1.1. Abiertas: PA-5, PA-7, PA-8 y PA-9 (estas tres, en la ronda 02).

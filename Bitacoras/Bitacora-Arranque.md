@@ -95,3 +95,27 @@
 - Auditor refutador en otro contexto (`claude -p`, mismo modelo, garantía reducida): tres rondas, «refutado» en las tres; lo señalado se atendió o quedó en LAZ-0001 (fin de ticket sin corte), LAZ-0002 (protocolo sin medir) y LAZ-0003 (licencia de la fuente en la imagen). No se corrió una cuarta ronda.
 - Compuertas en la rama (base `main` `9e5e1d6`): `ready --contra main`, `cierre --parcela`, `cierre --pr`, `documental --exigir-indice`, `ancla --fw <copia>`, `lazo` y `deuda`: PASA (0). `ancla` sigue avisando que ningún workflow invoca `cdd.py` (DEC-006).
 - PR #2 (https://github.com/hdcm-dev/PrintThermal_Motor_Maui-Emulator/pull/2), cabeza `ad7b415`: CI `cdd` (pull_request, 46031875233) en éxito; `mergeable` y `clean`. No se fusionó: la fusión va en orden en otra etapa.
+
+## 2026-11-27 · Fusión de PAR-PTE-02, 04 y 03; PAR-PTE-05 y release v1.0.0 (sesión CDD, subagente de un flujo)
+
+- Fusiones por conformación automática (`ENTREGA.md` §1), en orden de olas, con revisión refutadora de cada diff y guarda G1-G4 releída antes del merge:
+  - PR #2 (PAR-PTE-02): merge `d577191`.
+  - PR #4 (PAR-PTE-04): rebase sobre `main`, con el conflicto sólo en el CHANGELOG. Re-planificación en `main` `60eb8a4` (`lee` REQ-HIS-Almacen-De-Tickets@v2). Merge `8c0867b`.
+  - PR #3 (PAR-PTE-03): rebase; conflictos en el CHANGELOG y en SPR-01. Re-planificación en `main` `3dd7c6f` (`lee` REQ-HIS-Compilacion-Verificada@v3). Merge `0b8c5b0`.
+- PAR-PTE-05: re-planificación en `main` `9e02187`; PR #5, merge `7192bce`. La parcela tiene el detalle en `cdd/parcelas/PAR-PTE-05-Distribucion/`.
+  - Imagen (`aspnet:10.0.14-noble-chiseled` por digest), `release.yml` y la conexión del almacén en disco y del medio Bluetooth al host.
+  - Pruebas: rojo 9 de 123, verde 131 de 131 y mutación 9 de 10. Todo con turno en el equipo de cómputo (perfil liviano o pesado).
+  - Extremo a extremo con turno 274 y puesto de emulador, en modo INFRA: emulador 1 CPU / 5,5 GB, impresora con `--network container:` 1 CPU / 512 MB. `MotorDsl.SampleApp` imprimió 5 de 5. El PNG de la API tuvo la misma huella que el de la carpeta.
+  - Auditor refutador (subagente, mismo modelo): dos rondas, las dos refutaron, con respuesta a cada hallazgo. No se corrió una tercera.
+  - Compuertas sobre la cabeza `44134f9` contra `main`: `ready`, `cierre --parcela`, `cierre --pr`, `ancla`, `lazo`, `deuda` y `documental` en PASA.
+- Release `v1.0.0` (etiqueta sobre `7192bce`): workflow `release` 46041516862 en éxito, con 131 de 131 pruebas.
+  - Imagen `ghcr.io/hdcm-dev/printthermal_motor_maui-emulator:1.0.0`, digest `sha256:3bdebce4…62111`.
+  - Binario `printthermal-emulator-1.0.0-net10.0.tar.gz` adjunto.
+  - La imagen quedó **privada**: un pull anónimo responde «unauthorized». La visibilidad la decide la persona.
+- Al cerrar: emulador y periférico bajados, puesto de emulador liberado, turnos 269 a 281 cerrados y sin contenedores propios.
+- NO VERIFICADO:
+  - el extremo a extremo con la imagen publicada (es privada) y con el receptor final;
+  - LAZ-0011, reproducido dos veces: vincular con `createBond` y después conectar deja a Android sin cifrado;
+  - la fidelidad contra la 58HB6 física.
+- El navegador del servidor MCP del agente no llegó a la red de contenedores. El visor se capturó con Chrome del emulador de Android.
+

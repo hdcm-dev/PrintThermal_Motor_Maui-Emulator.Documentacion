@@ -131,3 +131,16 @@
   - Compuertas sobre la cabeza `54bf4d5` contra `main`: `ready`, `cierre --parcela`, `cierre --pr`, `documental`, `ancla`, `lazo` y `deuda` en PASA.
 - Abiertos: LAZ-0013 (pasos de `docs/` sin medir con la imagen publicada) y LAZ-0014 (imagen privada: la visibilidad la decide la persona).
 - SPR-01 queda con todas sus parcelas cerradas; la Review (K3) es de la persona.
+
+## 2026-11-27 · PAR-PTE-07: vincular desde Ajustes y conectar después, con cifrado; visor sin desborde (sesión CDD, subagente de un flujo)
+
+- Re-planificación por PR propio: PR #8, merge `24e034a` (LAZ-0011 y LAZ-0015 especificados; REQ-HIS-Descubrimiento-Y-Emparejamiento v3 y REQ-HIS-Visor-Web v3).
+- PAR-PTE-07: PR #9, merge `60d2a3f`, por conformación automática con la guarda G1-G4 releída antes del merge (cabeza `ed6fca9`, una corrida `dotnet` en éxito, `clean`).
+  - Diagnóstico: con netsim, la primera conexión tras encender el Bluetooth de Android lleva el manejador 0 y Android atribuye el fin de la vinculación a otro equipo vinculado; el equipo nuevo queda «AUTHENTICATING». La pila propia hacía su parte. Controles: con otro manejador, o sin otros vínculos, Android cifra.
+  - Corrección en la pila C# (ADR-0009, aprobada en rol por el mandato F1): reconexión breve tras un vínculo sin cifrar; traza HCI opcional con las claves tapadas.
+  - Visor: la tarjeta del ticket se ajusta al ancho (Chrome con emulación de 540 a 205 px y Chrome del emulador de Android).
+  - Pruebas: rojo de REQ-01, verde 143 de 143, mutantes 10 de 10, con turno en el equipo de cómputo, perfil liviano.
+  - Emulador de Android API 37 con turno y puesto de emulador: camino de Ajustes 3 de 3 cifrados al primer intento de la app, series de 5 de 5 con la misma huella del PNG; vincular conectando 5 de 5 dos veces.
+  - Auditor refutador (mismo modelo, otro contexto): la ronda 1 refutó y la ronda 2 sostuvo.
+  - Compuertas sobre la cabeza `ed6fca9` contra `main`: `ready`, `cierre --parcela`, `cierre --pr`, `recorrido`, `documental`, `ancla`, `lazo` y `deuda` en PASA.
+- Abierto: LAZ-0016 (casos del vínculo sin medir). La imagen publicada con este cambio sale con el próximo release.
